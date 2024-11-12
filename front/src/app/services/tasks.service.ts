@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Tarefa } from '../../Tarefa';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +13,8 @@ export class TasksService {
   constructor(private http: HttpClient) { }
 
 
-  getTasks(): {
-
+  getTasks(): Observable<Tarefa[]>{
+    return this.http.get<Tarefa[]>(this.URL);
   }
 
 
