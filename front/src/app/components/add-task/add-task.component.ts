@@ -17,7 +17,7 @@ export class AddTaskComponent {
 
 
   onSubmit(){
-
+    console.log(this.tarefa, this.categoria);
   }
 
 }
