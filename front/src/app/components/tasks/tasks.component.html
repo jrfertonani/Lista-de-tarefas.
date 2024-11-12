@@ -1,3 +1,1 @@
-<ul>
-  <li *ngFor="let tarefa of tarefas">{{ tarefa.tarefa }}</li>
-</ul>
+<app-task-item *ngFor=" let tarefa of tarefas" [tarefa]="tarefa"></app-task-item>
