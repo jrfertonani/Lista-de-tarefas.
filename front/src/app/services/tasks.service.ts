@@ -26,5 +26,8 @@ export class TasksService {
     return this.http.put<Tarefa>(`${this.URL}/${tarefa.id}`,tarefa);
   }
 
+  AddTask(tarefa: Tarefa):Observable<Tarefa>{
+    return this.http.post<Tarefa>(`${this.URL}`,tarefa);
+  }
 
 }
