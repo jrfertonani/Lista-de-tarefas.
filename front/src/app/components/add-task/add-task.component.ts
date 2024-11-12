@@ -16,6 +16,7 @@ export class AddTaskComponent {
   tarefa: string = '';
   categoria: string = '';
   concluido: boolean = false;
+  mostrarAddTarefa: boolean = false;
 
 
 
