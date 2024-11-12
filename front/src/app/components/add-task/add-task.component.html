@@ -1,4 +1,4 @@
-<form>
+<form (ngSubmit)="onSubmit()">
   <div>
     <label for="text">Tarefa:</label>
     <input
@@ -7,9 +7,11 @@
       class="form-control"
       placeholder="Adicionar Tarefa"
       id="text"
+      [(ngModel)]="tarefa"
     />
   </div>
 
+  <p>{{ tarefa }}</p>
   <div class="mb-4">
     <label for="categoria">Categoria: </label>
     <select name="categoria" id="categoria" class="form-select">
@@ -22,6 +24,5 @@
     </select>
   </div>
 
-  <input type="suvmit" value="Salvar Tarefa" class="btn btn-block mb-4">
-
+  <input type="suvmit" value="Salvar Tarefa" class="btn btn-block mb-4" />
 </form>
