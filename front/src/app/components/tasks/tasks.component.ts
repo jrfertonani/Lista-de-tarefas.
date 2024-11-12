@@ -3,11 +3,12 @@ import { Tarefa } from '../../../Tarefa';
 import { TasksService } from '../../services/tasks.service';
 import { CommonModule } from '@angular/common';
 import { TaskItemComponent } from "../task-item/task-item.component";
+import { AddTaskComponent } from "../add-task/add-task.component";
 
 @Component({
   selector: 'app-tasks',
   standalone: true,
-  imports: [CommonModule, TaskItemComponent],
+  imports: [CommonModule, TaskItemComponent, AddTaskComponent],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css'
 })
