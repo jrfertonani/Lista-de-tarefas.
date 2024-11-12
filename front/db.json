@@ -11,12 +11,6 @@
       "tarefa": "Estudar Angular",
       "categoria": "Trabalho",
       "concluido": true
-    },
-    {
-      "id": "3",
-      "tarefa": "Estudar c#",
-      "categoria": "Faculdade",
-      "concluido": false
     }
   ]
 }
