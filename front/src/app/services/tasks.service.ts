@@ -18,4 +18,13 @@ export class TasksService {
   }
 
 
+  deleteTask(tarefa: Tarefa):Observable<Tarefa>{
+    return this.http.delete<Tarefa>(`${this.URL}/${tarefa.id}`);
+  }
+
+  updateTask(tarefa:Tarefa):Observable<Tarefa>{
+    return this.http.put<Tarefa>(`${this.URL}/${tarefa.id}`,tarefa);
+  }
+
+
 }
